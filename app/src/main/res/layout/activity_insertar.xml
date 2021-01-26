@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#013137">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#3CFFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                 INSERTAR"
+            android:textColor="#FAF5F5"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_nombreE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#59FAF6F6"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColorHint="#F8F3F3"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_nombreI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre Producto"
+            android:inputType="textPersonName"
+            android:textColorHint="#F3EBEB" />
+
+        <EditText
+            android:id="@+id/et_codigoI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Código Barras"
+            android:inputType="textPersonName"
+            android:textColorHint="#EFEAEA" />
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:onClick="insertarDI"
+            android:text="insertar"
+            android:textColor="#EDE5E5"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/regreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#57FFFFFF"
+            android:text="menu"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="142dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:srcCompat="@drawable/insertar" />
+</RelativeLayout>

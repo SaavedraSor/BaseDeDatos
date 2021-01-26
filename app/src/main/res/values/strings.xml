@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Base_Datos_Tienda</string>
+    <string name="iniciar">Base_Datos_Tienda</string>
+    <string name="consultarBC">Base_Datos_Tienda</string>
+    <string name="eliminarBE">Base_Datos_Tienda</string>
+    <string name="modificarBM">Base_Datos_Tienda</string>
+    <string name="insertarDI">Base_Datos_Tienda</string>
+
+
+</resources>

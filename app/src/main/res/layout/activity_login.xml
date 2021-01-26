@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#013137"
+    tools:context=".Login">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="355dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="285dp"
+        android:background="#2FF3F0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#34F2F2F2"
+                android:hint="       LOGIN USER"
+                android:textColor="#FAF6F6"
+                android:textColorHighlight="#F8F2F2"
+                android:textColorHint="#F3EFEF"
+                android:textSize="36sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="USER"
+                android:inputType="textPersonName"
+                android:textColorHint="#AEABAB" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:textColorHint="#959292" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/boton"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D0D8CDCD"
+                android:onClick="iniciar"
+                android:text="INICIAR"
+                android:textColor="#FBF6F6"
+                android:textSize="30sp"
+                app:backgroundTint="#030C0B0B" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="352dp"
+        android:layout_height="63dp"
+        android:background="#D83DEFA8"
+        android:text="registrarse"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        app:backgroundTint="#8DFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="148dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
